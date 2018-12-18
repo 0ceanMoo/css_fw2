@@ -1,6 +1,6 @@
 h3.--lefted テーブル
 .tbl-box.__mb-20px
-  table.my.Table.--striped.--hoverd.__w-100pct
+  table.aTable.--striped.--hoverd.__w-100pc
     thead
       tr
         th AAA
@@ -12,58 +12,61 @@ h3.--lefted テーブル
           td Item #{val}
           td Item #{val}
           td Item #{val}
-  pre.--code
-    .
-      // pug
-      table.my.Table.--striped.--hoverd.__w-100pct
+  pre.--code.
+    テーブルは、tableタグにある程度基本設定をつけている
+    任意のクラスを割り当て、スタイルを追加する
 
-      // css
-      .my.Table thead {
-        color: white;
-        background: black;
-      }
-      .my.Table th {
-        border: solid 2px white;
-      }
-.tbl-box.__mb-20px
-  table.SampleTable.__w-100pct
-    thead
-      tr
-        th AAA
-        th BBB
-        th CCC
-    tbody
-      each val in [1,2,3,4,5]
-        tr
-          td Item #{val}
-          td Item #{val}
-          td Item #{val}
-  pre.--code
-    .
-      // pug
-      table.SampleTable
+    // pug
+    table.aTable.--striped.--hoverd.__w-100pct
 
-      // sass
-      table.SampleTable
-        @extend .\#{$modif_prefix}striped
-        @extend .\#{$modif_prefix}hoverd
-        width: 100%
-
-        thead
-          @extend .\#{$utils_prefix}Base
-          th
-            border: solid 2px white
-      }
-
-style
-  .
-    .tbl-box {
-    }
-    .my.Table thead {
+    // css
+    .aTable thead {
       color: white;
       background: black;
     }
-    .my.Table th {
+    .aTable th {
       border: solid 2px white;
     }
+.tbl-box.__mb-20px
+  table.myTable
+    thead
+      tr
+        th AAA
+        th BBB
+        th CCC
+    tbody
+      each val in [1,2,3,4,5]
+        tr
+          td Item #{val}
+          td Item #{val}
+          td Item #{val}
+  pre.--code.
+    stylusが使える場合も、任意のクラスを作り、そのクラスにスタイルを当てていく
+    tableタグが持つmodifyは「@extend table.striped」のようにすれば追加できる
+
+    // pug
+    table.myTable
+
+    // stylus
+    table.myTable
+      @extend table.--striped
+      @extend table.--hoverd
+      width: 100%
+
+      thead
+        @extend .__Base
+        th
+          border: solid 2px white
+    }
+
+style.
+  .tbl-box {
+  }
+  .aTable thead {
+    color: white;
+    background: black;
+  }
+  .aTable th {
+    border: solid 2px white;
+  }
 

@@ -13,13 +13,13 @@ table
   //th
   //td
 
-//// 継承サンプル
-//table.SampleTable
-//  @extend .{modif_prefix}striped
-//  @extend .{modif_prefix}hoverd
-//  width: 100%
-//
-//  thead
-//    @extend .#{$utils_prefix}Base
-//    th
-//      border: solid 2px white
+// 継承サンプル
+table.myTable
+  @extend table.{modif_prefix}striped
+  @extend table.{modif_prefix}hoverd
+  width: 100%
+
+  thead
+    @extend .{utils_prefix}Base
+    th
+      border: solid 2px white
