@@ -1,0 +1,30 @@
+/* ==============================================
+  List
+// ============================================== */
+ul
+  margin: 0
+  padding: 0
+  list-style-type: none
+  list-style-position: inside
+  li
+    box-sizing: border-box;
+    a
+      box-sizing: border-box
+      display: inline-block
+      width: 100%
+      height: 100%
+  &.{modif_prefix}virticaled
+    letter-spacing: -1rem     // inline-blockのスキマ回避
+    > li
+      display: inline-block
+      letter-spacing: normal  // font-size: 0にしたので戻す
+
+// 継承サンプル
+//.SampleList
+//  @extend ul.{modif_prefix}virticaled
+//  li
+//    @extend .{utils_prefix}Base
+//    width: 100px
+//    height: 60px
+//    line-height: 60px
+//    text-align: center

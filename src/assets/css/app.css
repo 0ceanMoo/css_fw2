@@ -1314,4 +1314,75 @@ a {
   clear: both;
 }
 /* elems */
+h1.--lefted,
+h2.--lefted,
+h3.--lefted,
+h4.--lefted,
+h5.--lefted,
+h6.--lefted {
+  border-left: 0.5rem solid #333;
+  padding: 0.1rem 0.5rem 0;
+}
+h1.--lined,
+h2.--lined,
+h3.--lined,
+h4.--lined,
+h5.--lined,
+h6.--lined {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+ul li {
+  box-sizing: border-box;
+}
+ul li a {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+ul.--virticaled {
+  letter-spacing: -1rem;
+}
+ul.--virticaled > li {
+  display: inline-block;
+  letter-spacing: normal;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+textarea {
+  box-sizing: border-box;
+  padding: 0.8rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #eee;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  background: #ffe;
+}
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="url"]:invalid,
+textarea:invalid {
+  background: #fee;
+}
+.--code {
+  margin: 0;
+  padding: 1rem;
+  background: #eee;
+}
 /* compo */
