@@ -4,9 +4,9 @@
 // https://copypet.jp/417/
 
 button(c=black, bg=white, bd=, h_c=, h_bg=)
-  if h_c
+  unless h_c
     h_c = bg
-  if h_bg
+  unless h_bg
     h_bg = c
 
   if bd
@@ -23,10 +23,10 @@ button(c=black, bg=white, bd=, h_c=, h_bg=)
     background: h_bg
 
 .{compo_prefix}Btn
-  button
+  button()
   box-sizing: border-box
   display: inline-block
-  padding: .5rem 1.2rem .2rem
+  padding: .4rem 1.2rem .3rem
   border: 1px solid
   cursor: pointer
   letter-spacing: normal
