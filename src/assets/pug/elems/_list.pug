@@ -1,0 +1,46 @@
+h3.--lefted リスト
+.list-box
+  ul
+    li._Fas.--heart item-1
+    li._Fas.--user  item-2
+    li._Fas.--lock  item-3
+.list-box
+  ul.SampleList
+    li: a._Far.--heart(href="#") item-1
+    li: a._Far.--user(href="#") item-2
+    li: a(href="#") item-3
+  p 水平メニューは基礎設定のみ提供する。細かい設定は「ul.--virticaled」にstyleを追加するか、sassが使えるなら「ul.my.--virticaled」を継承して整える
+  div
+    h4 styleタグ
+    pre.--code
+      .
+        /* ul.--virticaledに直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
+        ul.my.--virticaled > li {
+          background: #ccF;
+          width: 100px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+        }
+  div
+    h4 sassが使えるなら
+    pre.--code
+      .
+        .SampleList
+          @extend ul.\#{$modif_prefix}virticaled
+          li
+            @extend .\#{$utils_prefix}Base
+            box-sizing: border-box
+            width: 100px
+            height: 60px
+            line-height: 60px
+            text-align: center
+style
+  .
+    ul.my.--virticaled > li {
+      background: #ccF;
+      width: 100px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+    }

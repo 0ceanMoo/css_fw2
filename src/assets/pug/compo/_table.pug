@@ -1,0 +1,69 @@
+h3.--lefted テーブル
+.tbl-box.__mb-20px
+  table.my.Table.--striped.--hoverd.__w-100pct
+    thead
+      tr
+        th AAA
+        th BBB
+        th CCC
+    tbody
+      each val in [1,2,3,4,5]
+        tr
+          td Item #{val}
+          td Item #{val}
+          td Item #{val}
+  pre.--code
+    .
+      // pug
+      table.my.Table.--striped.--hoverd.__w-100pct
+
+      // css
+      .my.Table thead {
+        color: white;
+        background: black;
+      }
+      .my.Table th {
+        border: solid 2px white;
+      }
+.tbl-box.__mb-20px
+  table.SampleTable.__w-100pct
+    thead
+      tr
+        th AAA
+        th BBB
+        th CCC
+    tbody
+      each val in [1,2,3,4,5]
+        tr
+          td Item #{val}
+          td Item #{val}
+          td Item #{val}
+  pre.--code
+    .
+      // pug
+      table.SampleTable
+
+      // sass
+      table.SampleTable
+        @extend .\#{$modif_prefix}striped
+        @extend .\#{$modif_prefix}hoverd
+        width: 100%
+
+        thead
+          @extend .\#{$utils_prefix}Base
+          th
+            border: solid 2px white
+      }
+
+style
+  .
+    .tbl-box {
+    }
+    .my.Table thead {
+      color: white;
+      background: black;
+    }
+    .my.Table th {
+      border: solid 2px white;
+    }
+
