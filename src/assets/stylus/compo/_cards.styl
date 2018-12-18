@@ -9,14 +9,13 @@
   letter-spacing: normal // 隙間対策、親要素にletter-spacing: -1remをつけること
   vertical-align: top
 
-//// 継承サンプル
-//.SampleCard
-//  @extend .#{$compo_prefix}Card
-//  width: 400px
-//  > *
-//    padding: .7rem 1rem
-//  > h4
-//    @extend .#{$utils_prefix}Base
-//    color: white
-//  > p
-//    @extend .#{$utils_prefix}base
+// 継承サンプル
+.myCard
+  @extend .{compo_prefix}Card
+  width: 400px
+  > *
+    padding: .7rem 1rem
+  > h4
+    @extend .{utils_prefix}Base
+  > p
+    @extend .{utils_prefix}info

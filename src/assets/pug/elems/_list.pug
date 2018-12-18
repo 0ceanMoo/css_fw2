@@ -19,9 +19,9 @@ h3.--lefted リスト
       // 「@extend ul.--virticaled」することで「--virticaled」に定義された設定を全て引き継ぐ
       // li へのスタイルはお好みで
       .myVirticaled
-        @extend ul.{modif_prefix}virticaled
+        @extend ul.--virticaled
         li
-          @extend .{utils_prefix}Base
+          @extend .__Base
           box-sizing: border-box
           width: 100px
           height: 60px

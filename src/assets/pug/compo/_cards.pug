@@ -2,66 +2,62 @@ h3.--lefted カード
 .card-box
   .my._Card
     h4 カードの説明
-    pre.--code
-      .
-        div.my._Card {
-          width: 300px;
-          margin-right: 1rem;
-        }
-        div.my._Card > * {
-          padding: .7rem 1rem;
-        }
-        div.my._Card > h4 {
-          background: black;
-          color: white;
-        }
-        div.my._Card > p {
-          color: #666;
-          font-size: .9rem
-        }
-    p カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。
-  .SampleCard
+    pre.--code.
+      div.my._Card {
+        width: 300px;
+        margin-right: 1rem;
+      }
+      div.my._Card > * {
+        padding: .7rem 1rem;
+      }
+      div.my._Card > h4 {
+        background: black;
+        color: white;
+      }
+      div.my._Card > p {
+        color: #666;
+        font-size: .9rem
+      }
+    p stylusが使えない場合は「div.my._Card」のように任意のクラス「my」名前空間を限定し「_Card」自体の設定を汚染しないようスタイルを追加する
+  .myCard
     h4 カードの説明
-    pre.--code
-      .
-        // pug
-        .SampleCard
+    pre.--code.
+      // pug
+      .myCard
 
-        // sass
-        .SampleCard
-          @extend .\#{$compo_prefix}Card
-          width: 400px
-          > *
-            padding: .7rem 1rem
-          > h4
-            @extend .\#{$utils_prefix}Base
-            color: white
-          > p
-            @extend .\#{$utils_prefix}base
+      // styls
+      .myCard
+        @extend ._Card
+        width: 400px
+        > *
+          padding: .7rem 1rem
+        > h4
+          @extend .__Base
+        > p
+          @extend .__info
     p カードデザインについてはいくらデザイン作っても、実際に使う時どうせそのまま使えないので「._Card」という基本設定を持つクラスを@extendして、細かい部分は自前でカスタマイズすること。
 .card-box
   each val in [1,2,3,4,5,6]
     .my._Card.--shadow
       h4 タイトル
       p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-style
-  .
-    .card-box {
-      letter-spacing: -1rem
-    }
-    div.my._Card {
-      width: 300px;
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-    }
-    div.my._Card > * {
-      padding: .7rem 1rem;
-    }
-    div.my._Card > h4 {
-      background: black;
-      color: white;
-    }
-    div.my._Card > p {
-      color: #666;
-      font-size: .9rem
-    }
+style.
+  .card-box {
+    letter-spacing: -1rem
+  }
+  div.my._Card {
+    width: 300px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  div.my._Card > * {
+    padding: .7rem 1rem;
+  }
+  div.my._Card > h4 {
+    background: black;
+    color: white;
+  }
+  div.my._Card > p {
+    color: #666;
+    font-size: .9rem
+  }
