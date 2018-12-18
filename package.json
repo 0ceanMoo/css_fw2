@@ -15,6 +15,7 @@
   "scripts": {
     "build": "stylus ./src/assets/stylus/app.styl -o ./src/assets/css/app.css",
     "watch": "yarn build -w",
+    "pug": "pug ./src/assets/pug/index.pug --out ./dist/ --pretty",
     "server": "parcel ./src/assets/pug/*"
   }
 }
