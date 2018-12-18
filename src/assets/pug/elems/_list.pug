@@ -5,42 +5,50 @@ h3.--lefted リスト
     li._Fas.--user  item-2
     li._Fas.--lock  item-3
 .list-box
-  ul.SampleList
+  //ul.myVirticaled
+  ul.my.--virticaled
     li: a._Far.--heart(href="#") item-1
     li: a._Far.--user(href="#") item-2
     li: a(href="#") item-3
-  p 水平メニューは基礎設定のみ提供する。細かい設定は「ul.--virticaled」にstyleを追加するか、sassが使えるなら「ul.my.--virticaled」を継承して整える
+  p 水平メニューは「ul.--virticaled」で基礎設定のみ提供する。
+  p stylusが使えるなら「@extend ul.--virticaled」を継承したクラスを作り、スタイルを追加するか
+  p stylusが使えないなら、「ul.my.--virticaled」のように「my(任意の名前)」をつけることで「--virticaled」を汚染しないよう、スタイルを追加する
   div
-    h4 styleタグ
-    pre.--code
-      .
-        /* ul.--virticaledに直接styleあてると、他にも影響するので「my」で影響範囲を絞ってる */
-        ul.my.--virticaled > li {
-          background: #ccF;
-          width: 100px;
-          height: 60px;
-          line-height: 60px;
-          text-align: center;
-        }
+    h4 stylusが使えるなら
+    pre.--code.
+      // 「@extend ul.--virticaled」することで「--virticaled」に定義された設定を全て引き継ぐ
+      // li へのスタイルはお好みで
+      .myVirticaled
+        @extend ul.{modif_prefix}virticaled
+        li
+          @extend .{utils_prefix}Base
+          box-sizing: border-box
+          width: 100px
+          height: 60px
+          line-height: 60px
+          text-align: center
   div
-    h4 sassが使えるなら
-    pre.--code
-      .
-        .SampleList
-          @extend ul.\#{$modif_prefix}virticaled
-          li
-            @extend .\#{$utils_prefix}Base
-            box-sizing: border-box
-            width: 100px
-            height: 60px
-            line-height: 60px
-            text-align: center
-style
-  .
-    ul.my.--virticaled > li {
-      background: #ccF;
-      width: 100px;
-      height: 60px;
-      line-height: 60px;
-      text-align: center;
-    }
+    h4 stylusが使えないなら
+    pre.--code.
+      // 「ul.--virticaled」に直接styleあてると、
+      // 基本設定を提供している「--virticaled」自体に影響するので
+      // 「my(任意の名前)」で影響範囲を絞ってる
+      &lt;style&gt;
+      ul.my.--virticaled > li {
+        background: #333;
+        color: #fff;
+        width: 100px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+      }
+      &lt;/style&gt;
+style(type="css/stylus").
+  ul.my.--virticaled > li {
+    background: #333;
+    color: #fff;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
