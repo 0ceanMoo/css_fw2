@@ -1386,3 +1386,322 @@ textarea:invalid {
   background: #eee;
 }
 /* compo */
+._Box,
+._Card {
+  box-sizing: border-box;
+}
+._Box > *,
+._Card > * {
+  margin: 0;
+  padding: 0;
+}
+._Box.--shadow,
+._Card.--shadow {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+}
+._Card {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+}
+._Btn {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5rem 1.2rem 0.2rem;
+  border: 1px solid;
+  cursor: pointer;
+  letter-spacing: normal;
+  transition: 0.4s;
+}
+._Btn.--Black {
+  border-color: #000;
+  color: #fff;
+  background: #000;
+}
+._Btn.--Black:hover {
+  color: ;
+  background: ;
+}
+._Btn.--red {
+  border-color: #f33;
+  color: #f33;
+  background: #fff;
+}
+._Btn.--red:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Red {
+  border-color: #f33;
+  color: #fff;
+  background: #f33;
+}
+._Btn.--Red:hover {
+  color: ;
+  background: ;
+}
+._Btn.--blue {
+  border-color: #66c;
+  color: #66c;
+  background: #fff;
+}
+._Btn.--blue:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Blue {
+  border-color: #66c;
+  color: #fff;
+  background: #66c;
+}
+._Btn.--Blue:hover {
+  color: ;
+  background: ;
+}
+._Btn.--orange {
+  border-color: #f83;
+  color: #f83;
+  background: #fff;
+}
+._Btn.--orange:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Orange {
+  border-color: #f83;
+  color: #fff;
+  background: #f83;
+}
+._Btn.--Orange:hover {
+  color: ;
+  background: ;
+}
+._Btn.--teal {
+  border-color: #399;
+  color: #399;
+  background: #fff;
+}
+._Btn.--teal:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Teal {
+  border-color: #399;
+  color: #fff;
+  background: #399;
+}
+._Btn.--Teal:hover {
+  color: ;
+  background: ;
+}
+._Btn.--yellow {
+  border-color: #fd0;
+  color: #983;
+  background: #fff;
+}
+._Btn.--yellow:hover {
+  color: #fff;
+  background: #983;
+}
+._Btn.--Yellow {
+  border-color: #fd0;
+  color: #000;
+  background: #fd0;
+}
+._Btn.--Yellow:hover {
+  color: #fd0;
+  background: #000;
+}
+._Btn.--pink {
+  border-color: #f99;
+  color: #c66;
+  background: #fff;
+}
+._Btn.--pink:hover {
+  color: #fff;
+  background: #c66;
+}
+._Btn.--Pink {
+  border-color: #f99;
+  color: #000;
+  background: #f99;
+}
+._Btn.--Pink:hover {
+  color: #f99;
+  background: #000;
+}
+._Btn.--navy {
+  border-color: #036;
+  color: #036;
+  background: #fff;
+}
+._Btn.--navy:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Navy {
+  border-color: #036;
+  color: #fff;
+  background: #036;
+}
+._Btn.--Navy:hover {
+  color: ;
+  background: ;
+}
+._Btn.--info {
+  border-color: #00f;
+  color: #00f;
+  background: #fff;
+}
+._Btn.--info:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Info {
+  border-color: #00f;
+  color: #fff;
+  background: #00f;
+}
+._Btn.--Info:hover {
+  color: ;
+  background: ;
+}
+._Btn.--warn {
+  border-color: #ff0;
+  color: #983;
+  background: #fff;
+}
+._Btn.--warn:hover {
+  color: #fff;
+  background: #983;
+}
+._Btn.--Warn {
+  border-color: #ff0;
+  color: #000;
+  background: #ff0;
+}
+._Btn.--Warn:hover {
+  color: ;
+  background: ;
+}
+._Btn.--error {
+  border-color: #f00;
+  color: #f00;
+  background: #fff;
+}
+._Btn.--error:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Error {
+  border-color: #f00;
+  color: #fff;
+  background: #f00;
+}
+._Btn.--Error:hover {
+  color: ;
+  background: ;
+}
+._Btn.--ok {
+  border-color: #008080;
+  color: #008080;
+  background: #fff;
+}
+._Btn.--ok:hover {
+  color: ;
+  background: ;
+}
+._Btn.--Ok {
+  border-color: #008080;
+  color: #fff;
+  background: #008080;
+}
+._Btn.--Ok:hover {
+  color: ;
+  background: ;
+}
+._Btn.--ng {
+  border-color: #ffc0cb;
+  color: #c66;
+  background: #fff;
+}
+._Btn.--ng:hover {
+  color: #fff;
+  background: #c66;
+}
+._Btn.--Ng {
+  border-color: #ffc0cb;
+  color: #000;
+  background: #ffc0cb;
+}
+._Btn.--Ng:hover {
+  color: ;
+  background: ;
+}
+._Far:before,
+._Fas:before {
+  font-family: "Font Awesome 5 Free";
+  line-height: 1;
+  margin-right: 5px;
+}
+._Far.--heart:before,
+._Fas.--heart:before {
+  content: '\f004';
+}
+._Far.--user:before,
+._Fas.--user:before {
+  content: '\f007';
+}
+._Fas {
+  font-weight: 900;
+}
+._Fas.--lock:before {
+  content: '\f023';
+}
+._Fas.--th:before {
+  content: '\f00a';
+}
+._Fas.--th-list:before {
+  content: '\f00b';
+}
+._Fas.--th-large:before {
+  content: '\f009';
+}
+._Fas.--sign-out-alt:before {
+  content: '\f2f5';
+}
+input:before,
+input:after {
+  margin: 0;
+}
+input._Far,
+input._Fas {
+  font-family: "Font Awesome 5 Free";
+  line-height: 1;
+}
+input._Fas {
+  font-weight: 900;
+}
+table {
+  border-collapse: collapse;
+}
+table.--striped tr:nth-child(even) {
+  background: #f3f3f3;
+}
+table.--hoverd tbody tr:hover {
+  background: #ffe;
+}
+._Tag {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+._Tag.--radius {
+  border-radius: 0.3rem;
+}
+._Tag.--borderd {
+  border: 0.1rem solid;
+  padding: 0.18rem 1rem;
+}

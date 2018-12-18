@@ -1,0 +1,25 @@
+table
+  //border-collapse: separate
+  //border-spacing: 0
+  border-collapse: collapse
+  &.{modif_prefix}striped
+    tr:nth-child(even)
+      background: #f3f3f3
+  &.{modif_prefix}hoverd
+    tbody
+      tr:hover
+        background: #ffe
+  //tr
+  //th
+  //td
+
+//// 継承サンプル
+//table.SampleTable
+//  @extend .{modif_prefix}striped
+//  @extend .{modif_prefix}hoverd
+//  width: 100%
+//
+//  thead
+//    @extend .#{$utils_prefix}Base
+//    th
+//      border: solid 2px white
