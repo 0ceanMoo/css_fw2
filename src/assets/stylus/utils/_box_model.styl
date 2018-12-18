@@ -1,0 +1,135 @@
+/* ==============================================
+  Box model
+============================================== */
+// 5段階(xl,l,m,s,xs)でサイズ展開する
+// 具体的な数値で持たせるかは思案中
+
+/* margin
+---------------------------------------------- */
+// margin reset
+.#{$utils_prefix}m-0  { margin:       0     !important; }
+.#{$utils_prefix}mt-0 { margin-top:   0     !important; }
+.#{$utils_prefix}mb-0 { margin-bottom:0     !important; }
+.#{$utils_prefix}ml-0 { margin-left:  0     !important; }
+.#{$utils_prefix}mr-0 { margin-right: 0     !important; }
+.#{$utils_prefix}mx-0 { margin-left:  0     !important; margin-right: 0     !important; }
+.#{$utils_prefix}my-0 { margin-top:   0     !important; margin-bottom:0     !important; }
+.#{$utils_prefix}mx-a { margin-left:  auto  !important; margin-right: auto  !important; }
+
+// margin basic
+.#{$utils_prefix}m-xs { margin: $box_model_xs !important; }
+.#{$utils_prefix}m-sm { margin: $box_model_sm !important; }
+.#{$utils_prefix}m-md { margin: $box_model_md !important; }
+.#{$utils_prefix}m-lg { margin: $box_model_lg !important; }
+.#{$utils_prefix}m-xl { margin: $box_model_xl !important; }
+
+// margin t,b
+.#{$utils_prefix}mt-xs{ margin-top:   $box_model_xs !important; }
+.#{$utils_prefix}mb-xs{ margin-bottom:$box_model_xs !important; }
+.#{$utils_prefix}mt-sm{ margin-top:   $box_model_sm !important; }
+.#{$utils_prefix}mb-sm{ margin-bottom:$box_model_sm !important; }
+.#{$utils_prefix}mt-md{ margin-top:   $box_model_md !important; }
+.#{$utils_prefix}mb-md{ margin-bottom:$box_model_md !important; }
+.#{$utils_prefix}mt-lg{ margin-top:   $box_model_lg !important; }
+.#{$utils_prefix}mb-lg{ margin-bottom:$box_model_lg !important; }
+.#{$utils_prefix}mt-xl{ margin-top:   $box_model_xl !important; }
+.#{$utils_prefix}mb-xl{ margin-bottom:$box_model_xl !important; }
+
+// margin LR
+.#{$utils_prefix}ml-xs{ margin-left:  $box_model_xs !important; }
+.#{$utils_prefix}mr-xs{ margin-right: $box_model_xs !important; }
+.#{$utils_prefix}ml-sm{ margin-left:  $box_model_sm !important; }
+.#{$utils_prefix}mr-sm{ margin-right: $box_model_sm !important; }
+.#{$utils_prefix}ml-md{ margin-left:  $box_model_md !important; }
+.#{$utils_prefix}mr-md{ margin-right: $box_model_md !important; }
+.#{$utils_prefix}ml-lg{ margin-left:  $box_model_lg !important; }
+.#{$utils_prefix}mr-lg{ margin-right: $box_model_lg !important; }
+.#{$utils_prefix}ml-xl{ margin-left:  $box_model_xl !important; }
+.#{$utils_prefix}mr-xl{ margin-right: $box_model_xl !important; }
+
+// margin x,y
+.#{$utils_prefix}mx-xs{ margin-left: $box_model_xs !important; margin-right: $box_model_xs  !important; }
+.#{$utils_prefix}my-xs{ margin-top:  $box_model_xs !important; margin-bottom:$box_model_xs  !important; }
+.#{$utils_prefix}mx-sm{ margin-left: $box_model_sm !important; margin-right: $box_model_sm  !important; }
+.#{$utils_prefix}my-sm{ margin-top:  $box_model_sm !important; margin-bottom:$box_model_sm  !important; }
+.#{$utils_prefix}mx-md{ margin-left: $box_model_md !important; margin-right: $box_model_md  !important; }
+.#{$utils_prefix}my-md{ margin-top:  $box_model_md !important; margin-bottom:$box_model_md  !important; }
+.#{$utils_prefix}mx-lg{ margin-left: $box_model_lg !important; margin-right: $box_model_lg  !important; }
+.#{$utils_prefix}my-lg{ margin-top:  $box_model_lg !important; margin-bottom:$box_model_lg  !important; }
+.#{$utils_prefix}mx-xl{ margin-left: $box_model_xl !important; margin-right: $box_model_xl  !important; }
+.#{$utils_prefix}my-xl{ margin-top:  $box_model_xl !important; margin-bottom:$box_model_xl  !important; }
+
+/* padding
+---------------------------------------------- */
+// padding reset
+.#{$utils_prefix}p-0  { padding:        0 !important; }
+.#{$utils_prefix}pt-0 { padding-top:    0 !important; }
+.#{$utils_prefix}pb-0 { padding-bottom: 0 !important; }
+.#{$utils_prefix}pl-0 { padding-left:   0 !important; }
+.#{$utils_prefix}pr-0 { padding-right:  0 !important; }
+.#{$utils_prefix}px-0 { padding-left:   0 !important; padding-right:  0 !important; }
+.#{$utils_prefix}py-0 { padding-top:    0 !important; padding-bottom: 0 !important; }
+
+// padding basic
+.#{$utils_prefix}p-xs { padding: $box_model_xs  !important; }
+.#{$utils_prefix}p-sm { padding: $box_model_sm  !important; }
+.#{$utils_prefix}p-md { padding: $box_model_md  !important; }
+.#{$utils_prefix}p-lg { padding: $box_model_lg  !important; }
+.#{$utils_prefix}p-xl { padding: $box_model_xl  !important; }
+
+// padding t,b
+.#{$utils_prefix}pt-xs{ padding-top:    $box_model_xs !important; }
+.#{$utils_prefix}pb-xs{ padding-bottom: $box_model_xs !important; }
+.#{$utils_prefix}pt-sm{ padding-top:    $box_model_sm !important; }
+.#{$utils_prefix}pb-sm{ padding-bottom: $box_model_sm !important; }
+.#{$utils_prefix}pt-md{ padding-top:    $box_model_md !important; }
+.#{$utils_prefix}pb-md{ padding-bottom: $box_model_md !important; }
+.#{$utils_prefix}pt-lg{ padding-top:    $box_model_lg !important; }
+.#{$utils_prefix}pb-lg{ padding-bottom: $box_model_lg !important; }
+.#{$utils_prefix}pt-xl{ padding-top:    $box_model_xl !important; }
+.#{$utils_prefix}pb-xl{ padding-bottom: $box_model_xl !important; }
+
+// padding LR
+.#{$utils_prefix}pl-xs{ padding-left: $box_model_xs !important; }
+.#{$utils_prefix}pr-xs{ padding-right:$box_model_xs !important; }
+.#{$utils_prefix}pl-sm{ padding-left: $box_model_sm !important; }
+.#{$utils_prefix}pr-sm{ padding-right:$box_model_sm !important; }
+.#{$utils_prefix}pl-md{ padding-left: $box_model_md !important; }
+.#{$utils_prefix}pr-md{ padding-right:$box_model_md !important; }
+.#{$utils_prefix}pl-lg{ padding-left: $box_model_lg !important; }
+.#{$utils_prefix}pr-lg{ padding-right:$box_model_lg !important; }
+.#{$utils_prefix}pl-xl{ padding-left: $box_model_xl !important; }
+.#{$utils_prefix}pr-xl{ padding-right:$box_model_xl !important; }
+
+// padding x,y
+.#{$utils_prefix}px-xs{ padding-left:$box_model_xs  !important; padding-right:  $box_model_xs !important; }
+.#{$utils_prefix}py-xs{ padding-top: $box_model_xs  !important; padding-bottom: $box_model_xs !important; }
+.#{$utils_prefix}px-sm{ padding-left:$box_model_sm  !important; padding-right:  $box_model_sm !important; }
+.#{$utils_prefix}py-sm{ padding-top: $box_model_sm  !important; padding-bottom: $box_model_sm !important; }
+.#{$utils_prefix}px-md{ padding-left:$box_model_md  !important; padding-right:  $box_model_md !important; }
+.#{$utils_prefix}py-md{ padding-top: $box_model_md  !important; padding-bottom: $box_model_md !important; }
+.#{$utils_prefix}px-lg{ padding-left:$box_model_lg  !important; padding-right:  $box_model_lg !important; }
+.#{$utils_prefix}py-lg{ padding-top: $box_model_lg  !important; padding-bottom: $box_model_lg !important; }
+.#{$utils_prefix}px-xl{ padding-left:$box_model_xl  !important; padding-right:  $box_model_xl !important; }
+.#{$utils_prefix}py-xl{ padding-top: $box_model_xl  !important; padding-bottom: $box_model_xl !important; }
+
+/* margin & padding
+---------------------------------------------- */
+
+// 5-20pxまで、5px間隔で作る
+$mdpd: (
+  m: margin,
+  p: padding
+);
+@each $e, $p in $mdpd {
+  @for $i from 1 through 4 {
+    $val : #{$i * 5};
+    .#{$utils_prefix}#{$e}-#{$val}px  { #{$p}:       #{$val}px !important; }
+    .#{$utils_prefix}#{$e}t-#{$val}px { #{$p}-top:   #{$val}px !important; }
+    .#{$utils_prefix}#{$e}b-#{$val}px { #{$p}-bottom:#{$val}px !important; }
+    .#{$utils_prefix}#{$e}l-#{$val}px { #{$p}-left:  #{$val}px !important; }
+    .#{$utils_prefix}#{$e}r-#{$val}px { #{$p}-right: #{$val}px !important; }
+    .#{$utils_prefix}#{$e}x-#{$val}px { #{$p}-left:  #{$val}px !important; #{$p}-right: #{$val}px !important; }
+    .#{$utils_prefix}#{$e}y-#{$val}px { #{$p}-top:   #{$val}px !important; #{$p}-bottom:#{$val}px !important; }
+  }
+}

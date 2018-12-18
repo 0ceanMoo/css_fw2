@@ -1,0 +1,188 @@
+/* foundation */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* utils */
+.__block {
+  display: block !important;
+}
+.__iblock {
+  display: inline-block !important;
+}
+.__inline {
+  display: inline !important;
+}
+.__hidden {
+  display: hidden !important;
+}
+.__fixed {
+  position: fixed;
+}
+.__relative {
+  position: relative;
+}
+.__absolute {
+  position: absolute;
+}
+.__flex {
+  position: flex;
+}
+.__w-20px {
+  width: 20px !important;
+}
+.__w-150px {
+  width: 150px !important;
+}
+.__w-200px {
+  width: 200px !important;
+}
+.__w-30px {
+  width: 30px !important;
+}
+.__w-250px {
+  width: 250px !important;
+}
+.__w-300px {
+  width: 300px !important;
+}
+.__w-40px {
+  width: 40px !important;
+}
+.__w-350px {
+  width: 350px !important;
+}
+.__w-400px {
+  width: 400px !important;
+}
+.__w-50px {
+  width: 50px !important;
+}
+.__w-450px {
+  width: 450px !important;
+}
+.__w-500px {
+  width: 500px !important;
+}
+.__w-60px {
+  width: 60px !important;
+}
+.__w-550px {
+  width: 550px !important;
+}
+.__w-600px {
+  width: 600px !important;
+}
+.__w-70px {
+  width: 70px !important;
+}
+.__w-650px {
+  width: 650px !important;
+}
+.__w-700px {
+  width: 700px !important;
+}
+.__w-80px {
+  width: 80px !important;
+}
+.__w-750px {
+  width: 750px !important;
+}
+.__w-800px {
+  width: 800px !important;
+}
+.__w-90px {
+  width: 90px !important;
+}
+.__w-850px {
+  width: 850px !important;
+}
+.__w-900px {
+  width: 900px !important;
+}
+.__w-100px {
+  width: 100px !important;
+}
+.__w-950px {
+  width: 950px !important;
+}
+.__w-1000px {
+  width: 1000px !important;
+}
+.__w-5pc {
+  width: 5% !important;
+}
+.__w-10pc {
+  width: 10% !important;
+}
+.__w-15pc {
+  width: 15% !important;
+}
+.__w-20pc {
+  width: 20% !important;
+}
+.__w-25pc {
+  width: 25% !important;
+}
+.__w-30pc {
+  width: 30% !important;
+}
+.__w-35pc {
+  width: 35% !important;
+}
+.__w-40pc {
+  width: 40% !important;
+}
+.__w-45pc {
+  width: 45% !important;
+}
+.__w-50pc {
+  width: 50% !important;
+}
+.__w-55pc {
+  width: 55% !important;
+}
+.__w-60pc {
+  width: 60% !important;
+}
+.__w-65pc {
+  width: 65% !important;
+}
+.__w-70pc {
+  width: 70% !important;
+}
+.__w-75pc {
+  width: 75% !important;
+}
+.__w-80pc {
+  width: 80% !important;
+}
+.__w-85pc {
+  width: 85% !important;
+}
+.__w-90pc {
+  width: 90% !important;
+}
+.__w-95pc {
+  width: 95% !important;
+}
+.__w-100pc {
+  width: 100% !important;
+}
+.__top {
+  vertical-align: top !important;
+}
+.__middle {
+  vertical-align: middle !important;
+}
+.__bottom {
+  vertical-align: bottom !important;
+}
+.__f-left {
+  float: left;
+}
+.__f-right {
+  float: right;
+}
+/* elems */
+/* compo */

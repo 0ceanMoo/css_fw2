@@ -1,0 +1,43 @@
+$breakpoints-up: (
+  'mobile':     'screen and (min-width: #{$breakpoint_mobile})',
+  'phablet':    'screen and (min-width: #{$breakpoint_phablet})',
+  'tablet':     'screen and (min-width: #{$breakpoint_tablet})',
+  'desktop':    'screen and (min-width: #{$breakpoint_desktop})',
+  'desktop-hd': 'screen and (min-width: #{$breakpoint_desktop-hd})',
+) !default;
+$breakpoints-down: (
+  'mobile':     'screen and (max-width: #{$breakpoint_mobile - 1px})',
+  'phablet':    'screen and (max-width: #{$breakpoint_phablet - 1px})',
+  'tablet':     'screen and (max-width: #{$breakpoint_tablet - 1px})',
+  'desktop':    'screen and (max-width: #{$breakpoint_desktop - 1px})',
+  'desktop-hd': 'screen and (max-width: #{$breakpoint_desktop-hd - 1px})',
+) !default;
+
+
+@mixin mq-up($size: mobile) {
+  @media #{map-get($breakpoints-up, $size)} {
+    @content;
+  }
+}
+@mixin mq-down($size: desktop-hd) {
+  @media #{map-get($breakpoints-down, $size)} {
+    @content;
+  }
+}
+@mixin mq-only($size: mobile) {
+  @if $size == mobile {
+    @media (max-width: #{$breakpoint_mobile - 1px}) { @content; }
+  }
+  @else if $size == phablet {
+    @media (min-width: #{$breakpoint_mobile}) and (max-width: #{$breakpoint_phablet - 1px}) { @content; }
+  }
+  @else if $size == tablet {
+    @media (min-width: #{$breakpoint_tablet}) and (max-width: #{$breakpoint_desktop - 1px}) { @content; }
+  }
+  @else if $size == desktop {
+    @media (min-width: #{$breakpoint_desktop}) and (max-width: #{$breakpoint_desktop-hd - 1px}) { @content; }
+  }
+  @else if $size == desktop-hd {
+    @media (min-width: #{$breakpoint_desktop-hd}) { @content; }
+  }
+}

@@ -1,0 +1,158 @@
+/* ==============================================
+  Colors
+============================================== */
+
+/* font & background colors
+---------------------------------------------- */
+$cbc: (
+  c : color,
+  bg: background-color
+);
+
+@each $e, $p in $cbc {
+  .#{$utils_prefix}#{$e}-fff { #{$p}: #fff /* !important; */ }
+  .#{$utils_prefix}#{$e}-eee { #{$p}: #eee /* !important; */ }
+  .#{$utils_prefix}#{$e}-ccc { #{$p}: #ccc /* !important; */ }
+  .#{$utils_prefix}#{$e}-999 { #{$p}: #999 /* !important; */ }
+  .#{$utils_prefix}#{$e}-666 { #{$p}: #666 /* !important; */ }
+  .#{$utils_prefix}#{$e}-333 { #{$p}: #333 /* !important; */ }
+  .#{$utils_prefix}#{$e}-000 { #{$p}: #000 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-300 { #{$p}: #300 /* !important; */ }
+  .#{$utils_prefix}#{$e}-030 { #{$p}: #030 /* !important; */ }
+  .#{$utils_prefix}#{$e}-003 { #{$p}: #003 /* !important; */ }
+  .#{$utils_prefix}#{$e}-033 { #{$p}: #033 /* !important; */ }
+  .#{$utils_prefix}#{$e}-303 { #{$p}: #303 /* !important; */ }
+  .#{$utils_prefix}#{$e}-330 { #{$p}: #330 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-600 { #{$p}: #600 /* !important; */ }
+  .#{$utils_prefix}#{$e}-060 { #{$p}: #060 /* !important; */ }
+  .#{$utils_prefix}#{$e}-006 { #{$p}: #006 /* !important; */ }
+  .#{$utils_prefix}#{$e}-066 { #{$p}: #066 /* !important; */ }
+  .#{$utils_prefix}#{$e}-606 { #{$p}: #606 /* !important; */ }
+  .#{$utils_prefix}#{$e}-660 { #{$p}: #660 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-633 { #{$p}: #633 /* !important; */ }
+  .#{$utils_prefix}#{$e}-363 { #{$p}: #363 /* !important; */ }
+  .#{$utils_prefix}#{$e}-336 { #{$p}: #336 /* !important; */ }
+  .#{$utils_prefix}#{$e}-366 { #{$p}: #366 /* !important; */ }
+  .#{$utils_prefix}#{$e}-636 { #{$p}: #636 /* !important; */ }
+  .#{$utils_prefix}#{$e}-663 { #{$p}: #663 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-900 { #{$p}: #900 /* !important; */ }
+  .#{$utils_prefix}#{$e}-090 { #{$p}: #090 /* !important; */ }
+  .#{$utils_prefix}#{$e}-009 { #{$p}: #009 /* !important; */ }
+  .#{$utils_prefix}#{$e}-099 { #{$p}: #099 /* !important; */ }
+  .#{$utils_prefix}#{$e}-909 { #{$p}: #909 /* !important; */ }
+  .#{$utils_prefix}#{$e}-990 { #{$p}: #990 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-933 { #{$p}: #933 /* !important; */ }
+  .#{$utils_prefix}#{$e}-393 { #{$p}: #393 /* !important; */ }
+  .#{$utils_prefix}#{$e}-339 { #{$p}: #339 /* !important; */ }
+  .#{$utils_prefix}#{$e}-399 { #{$p}: #399 /* !important; */ }
+  .#{$utils_prefix}#{$e}-939 { #{$p}: #939 /* !important; */ }
+  .#{$utils_prefix}#{$e}-993 { #{$p}: #993 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-966 { #{$p}: #966 /* !important; */ }
+  .#{$utils_prefix}#{$e}-696 { #{$p}: #696 /* !important; */ }
+  .#{$utils_prefix}#{$e}-669 { #{$p}: #669 /* !important; */ }
+  .#{$utils_prefix}#{$e}-699 { #{$p}: #699 /* !important; */ }
+  .#{$utils_prefix}#{$e}-969 { #{$p}: #969 /* !important; */ }
+  .#{$utils_prefix}#{$e}-996 { #{$p}: #996 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-c33 { #{$p}: #c33 /* !important; */ }
+  .#{$utils_prefix}#{$e}-3c3 { #{$p}: #3c3 /* !important; */ }
+  .#{$utils_prefix}#{$e}-33c { #{$p}: #33c /* !important; */ }
+  .#{$utils_prefix}#{$e}-3cc { #{$p}: #3cc /* !important; */ }
+  .#{$utils_prefix}#{$e}-c3c { #{$p}: #c3c /* !important; */ }
+  .#{$utils_prefix}#{$e}-cc3 { #{$p}: #cc3 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-c66 { #{$p}: #c66 /* !important; */ }
+  .#{$utils_prefix}#{$e}-6c6 { #{$p}: #6c6 /* !important; */ }
+  .#{$utils_prefix}#{$e}-66c { #{$p}: #66c /* !important; */ }
+  .#{$utils_prefix}#{$e}-6cc { #{$p}: #6cc /* !important; */ }
+  .#{$utils_prefix}#{$e}-c6c { #{$p}: #c6c /* !important; */ }
+  .#{$utils_prefix}#{$e}-cc6 { #{$p}: #cc6 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-c99 { #{$p}: #c99 /* !important; */ }
+  .#{$utils_prefix}#{$e}-9c9 { #{$p}: #9c9 /* !important; */ }
+  .#{$utils_prefix}#{$e}-99c { #{$p}: #99c /* !important; */ }
+  .#{$utils_prefix}#{$e}-9cc { #{$p}: #9cc /* !important; */ }
+  .#{$utils_prefix}#{$e}-c9c { #{$p}: #c9c /* !important; */ }
+  .#{$utils_prefix}#{$e}-cc9 { #{$p}: #cc9 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-f66 { #{$p}: #f66 /* !important; */ }
+  .#{$utils_prefix}#{$e}-6f6 { #{$p}: #6f6 /* !important; */ }
+  .#{$utils_prefix}#{$e}-66f { #{$p}: #66f /* !important; */ }
+  .#{$utils_prefix}#{$e}-6ff { #{$p}: #6ff /* !important; */ }
+  .#{$utils_prefix}#{$e}-f6f { #{$p}: #f6f /* !important; */ }
+  .#{$utils_prefix}#{$e}-ff6 { #{$p}: #ff6 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-f99 { #{$p}: #f99 /* !important; */ }
+  .#{$utils_prefix}#{$e}-9f9 { #{$p}: #9f9 /* !important; */ }
+  .#{$utils_prefix}#{$e}-99f { #{$p}: #99f /* !important; */ }
+  .#{$utils_prefix}#{$e}-9ff { #{$p}: #9ff /* !important; */ }
+  .#{$utils_prefix}#{$e}-f9f { #{$p}: #f9f /* !important; */ }
+  .#{$utils_prefix}#{$e}-ff9 { #{$p}: #ff9 /* !important; */ }
+
+  .#{$utils_prefix}#{$e}-fcc { #{$p}: #fcc /* !important; */ }
+  .#{$utils_prefix}#{$e}-cfc { #{$p}: #cfc /* !important; */ }
+  .#{$utils_prefix}#{$e}-ccf { #{$p}: #ccf /* !important; */ }
+  .#{$utils_prefix}#{$e}-cff { #{$p}: #cff /* !important; */ }
+  .#{$utils_prefix}#{$e}-fcf { #{$p}: #fcf /* !important; */ }
+  .#{$utils_prefix}#{$e}-ffc { #{$p}: #ffc /* !important; */ }
+}
+
+/* font colors
+---------------------------------------------- */
+.#{$utils_prefix}red    { color: #{$red}    /* !important; */ }
+.#{$utils_prefix}orange { color: #{$orange} /* !important; */ }
+.#{$utils_prefix}yellow { color: #{$yellow} /* !important; */ }
+.#{$utils_prefix}olive  { color: #{$olive}  /* !important; */ }
+.#{$utils_prefix}green  { color: #{$green}  /* !important; */ }
+.#{$utils_prefix}lime   { color: #{$lime}   /* !important; */ }
+.#{$utils_prefix}teal   { color: #{$teal}   /* !important; */ }
+.#{$utils_prefix}blue   { color: #{$blue}   /* !important; */ }
+.#{$utils_prefix}navy   { color: #{$navy}   /* !important; */ }
+.#{$utils_prefix}violet { color: #{$violet} /* !important; */ }
+.#{$utils_prefix}purple { color: #{$purple} /* !important; */ }
+.#{$utils_prefix}pink   { color: #{$pink}   /* !important; */ }
+.#{$utils_prefix}brown  { color: #{$brown}  /* !important; */ }
+
+/* background colors
+---------------------------------------------- */
+.#{$utils_prefix}Red    { color: white; background: $red    /* !important; */ }
+.#{$utils_prefix}Orange { color: white; background: $orange /* !important; */ }
+.#{$utils_prefix}Yellow { color: black; background: $yellow /* !important; */ }
+.#{$utils_prefix}Olive  { color: white; background: $olive  /* !important; */ }
+.#{$utils_prefix}Green  { color: white; background: $green  /* !important; */ }
+.#{$utils_prefix}Lime   { color: black; background: $lime   /* !important; */ }
+.#{$utils_prefix}Teal   { color: white; background: $teal   /* !important; */ }
+.#{$utils_prefix}Blue   { color: white; background: $blue   /* !important; */ }
+.#{$utils_prefix}Navy   { color: white; background: $navy   /* !important; */ }
+.#{$utils_prefix}Violet { color: black; background: $violet /* !important; */ }
+.#{$utils_prefix}Purple { color: white; background: $purple /* !important; */ }
+.#{$utils_prefix}Pink   { color: black; background: $pink   /* !important; */ }
+.#{$utils_prefix}Brown  { color: white; background: $brown  /* !important; */ }
+
+/* message colors
+---------------------------------------------- */
+.#{$utils_prefix}Info   { color: white; background: $color-info   /* !important; */ }
+.#{$utils_prefix}Warn   { color: black; background: $color-warn   /* !important; */ }
+.#{$utils_prefix}Error  { color: white; background: $color-error  /* !important; */ }
+.#{$utils_prefix}Ok     { color: white; background: $color-ok     /* !important; */ }
+.#{$utils_prefix}Ng     { color: black; background: $color-ng     /* !important; */ }
+
+.#{$utils_prefix}info   { color: $color-info  }
+.#{$utils_prefix}warn   { color: $color-warn  }
+.#{$utils_prefix}error  { color: $color-error }
+.#{$utils_prefix}ok     { color: $color-ok    }
+.#{$utils_prefix}ng     { color: $color-ng    }
+
+.#{$utils_prefix}Base   { color: white; background: $color-bg }
+.#{$utils_prefix}Main   { color: white; background: $color-main}
+.#{$utils_prefix}Accent { color: white; background: $color-accent}
+
+.#{$utils_prefix}base   { color: $color-bg }
+.#{$utils_prefix}main   { color: $color-main}
+.#{$utils_prefix}accent { color: $color-accent}
