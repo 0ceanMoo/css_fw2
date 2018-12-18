@@ -19,5 +19,13 @@ foundation で基礎設定を整える
 
 ユーティリティは「__」がプレフィックスみたい
 
-margin-top -> m-t
-float-left -> f-left
+サイズを５段階用意
+mt-xs
+mt-sm
+mt-md
+mt-lg
+mt-xl
+
+色も
+main
+accentとか
