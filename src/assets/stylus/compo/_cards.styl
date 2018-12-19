@@ -3,7 +3,7 @@
 // ============================================== */
 // https://nippori30.hatenablog.com/entry/2018/05/01/174518
 
-.{compo_prefix}Card
+.{$compo_prefix}Card
   @extend ._Box
   display: inline-block
   letter-spacing: normal // 隙間対策、親要素にletter-spacing: -1remをつけること
@@ -11,11 +11,11 @@
 
 // 継承サンプル
 .myCard
-  @extend .{compo_prefix}Card
+  @extend .{$compo_prefix}Card
   width: 400px
   > *
     padding: .7rem 1rem
   > h4
-    @extend .{utils_prefix}Base
+    @extend .{$utils_prefix}Base
   > p
-    @extend .{utils_prefix}info
+    @extend .{$utils_prefix}info

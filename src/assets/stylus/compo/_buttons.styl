@@ -22,7 +22,7 @@ button(c=black, bg=white, bd=, h_c=, h_bg=)
     color: h_c
     background: h_bg
 
-.{compo_prefix}Btn
+.{$compo_prefix}Btn
   button()
   box-sizing: border-box
   display: inline-block
@@ -32,80 +32,80 @@ button(c=black, bg=white, bd=, h_c=, h_bg=)
   letter-spacing: normal
   transition: .4s
 
-  &.{modif_prefix}Black
+  &.{$modif_prefix}Black
     button(white, black, 1)
-  &.{modif_prefix}red
-    button(color-red)
-  &.{modif_prefix}Red
-    button(white, color-red, 1)
-  &.{modif_prefix}blue
-    button(color-blue)
-  &.{modif_prefix}Blue
-    button(white, color-blue, 1)
-  &.{modif_prefix}orange
-    button(color-orange)
-  &.{modif_prefix}Orange
-    button(white, color-orange, 1)
-  &.{modif_prefix}teal
-    button(color-teal)
-  &.{modif_prefix}Teal
-    button(white, color-teal, 1)
-  &.{modif_prefix}yellow
-    button(#983, white, color-yellow, black, color-yellow)
-  &.{modif_prefix}Yellow
-    button(black, color-yellow, 1, #983, white)
-  &.{modif_prefix}pink
-    button(#c66, white, color-pink, black, color-pink)
-  &.{modif_prefix}Pink
-    button(black, color-pink, 1, #c66, white)
-  &.{modif_prefix}navy
-    button(color-navy)
-  &.{modif_prefix}Navy
-    button(white, color-navy, 1)
+  &.{$modif_prefix}red
+    button($red)
+  &.{$modif_prefix}Red
+    button(white, $red, 1)
+  &.{$modif_prefix}blue
+    button($blue)
+  &.{$modif_prefix}Blue
+    button(white, $blue, 1)
+  &.{$modif_prefix}orange
+    button($orange)
+  &.{$modif_prefix}Orange
+    button(white, $orange, 1)
+  &.{$modif_prefix}teal
+    button($teal)
+  &.{$modif_prefix}Teal
+    button(white, $teal, 1)
+  &.{$modif_prefix}yellow
+    button(#983, white, $yellow, black, $yellow)
+  &.{$modif_prefix}Yellow
+    button(black, $yellow, 1, #983, white)
+  &.{$modif_prefix}pink
+    button(#c66, white, $pink, black, $pink)
+  &.{$modif_prefix}Pink
+    button(black, $pink, 1, #c66, white)
+  &.{$modif_prefix}navy
+    button($navy)
+  &.{$modif_prefix}Navy
+    button(white, $navy, 1)
 
-  &.{modif_prefix}info
-    button(color-info)
-  &.{modif_prefix}Info
-    button(white, color-info, 1)
+  &.{$modif_prefix}info
+    button($color-info)
+  &.{$modif_prefix}Info
+    button(white, $color-info, 1)
 
-  &.{modif_prefix}warn
-    button(#983, white, color-warn, black, color-warn)
-  &.{modif_prefix}Warn
-    button(black, color-warn, 1)
+  &.{$modif_prefix}warn
+    button(#983, white, $color-warn, black, $color-warn)
+  &.{$modif_prefix}Warn
+    button(black, $color-warn, 1)
 
-  &.{modif_prefix}error
-    button(color-error)
-  &.{modif_prefix}Error
-    button(white, color-error, 1)
+  &.{$modif_prefix}error
+    button($color-error)
+  &.{$modif_prefix}Error
+    button(white, $color-error, 1)
 
-  &.{modif_prefix}ok
-    button(color-ok)
-  &.{modif_prefix}Ok
-    button(white, color-ok, 1)
+  &.{$modif_prefix}ok
+    button($color-ok)
+  &.{$modif_prefix}Ok
+    button(white, $color-ok, 1)
 
-  &.{modif_prefix}ng
-    button(#c66, white, color-ng, black, color-ng)
-  &.{modif_prefix}Ng
-    button(black, color-ng, 1)
+  &.{$modif_prefix}ng
+    button(#c66, white, $color-ng, black, $color-ng)
+  &.{$modif_prefix}Ng
+    button(black, $color-ng, 1)
 
-  //&.{modif_prefix}info
-  //  @extend .{compo_prefix}Btn.#{modif_prefix}blue
-  //&.#{modif_prefix}Info
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}Blue
-  //&.#{modif_prefix}warn
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}yellow
-  //&.#{modif_prefix}Warn
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}Yellow
-  //&.#{modif_prefix}error
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}red
-  //&.#{modif_prefix}Error
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}Red
+  //&.{$modif_prefix}info
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}blue
+  //&.{$modif_prefix}Info
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}Blue
+  //&.{$modif_prefix}warn
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}yellow
+  //&.{$modif_prefix}Warn
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}Yellow
+  //&.{$modif_prefix}error
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}red
+  //&.{$modif_prefix}Error
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}Red
 
-  //&.#{modif_prefix}ok
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}teal
-  //&.#{modif_prefix}Ok
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}Teal
-  //&.#{modif_prefix}ng
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}pink
-  //&.#{modif_prefix}Ng
-  //  @extend .#{compo_prefix}Btn.#{modif_prefix}Pink
+  //&.{$modif_prefix}ok
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}teal
+  //&.{$modif_prefix}Ok
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}Teal
+  //&.{$modif_prefix}ng
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}pink
+  //&.{$modif_prefix}Ng
+  //  @extend .{$compo_prefix}Btn.{$modif_prefix}Pink

@@ -24,6 +24,19 @@ html(lang="ja")
         article: include compo/_cards.pug
         article: include compo/_table.pug
         article: include compo/_tags.pug
+      section
+        h2.--lined メディアクエリ
+        pre.--code.
+          .someClass
+            width: 1600px
+            @include mq-down(xl)
+              width: 1320px
+            @include mq-down(lg)
+              width: 990px
+            @include mq-down(md)
+              width: 660px
+            @include mq-down(sm)
+              width: 320px
     style.
       body {
         padding: 0 .5rem;

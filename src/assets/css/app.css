@@ -1267,43 +1267,43 @@ body {
   background-color: #ffc;
 }
 .__red {
-  color: #f00 /* !important; */;
+  color: #f33 /* !important; */;
 }
 .__orange {
-  color: #ffa500 /* !important; */;
+  color: #f83 /* !important; */;
 }
 .__yellow {
-  color: #ff0 /* !important; */;
+  color: #fd0 /* !important; */;
 }
 .__olive {
-  color: #808000 /* !important; */;
+  color: #880 /* !important; */;
 }
 .__green {
-  color: #008000 /* !important; */;
+  color: #3c6 /* !important; */;
 }
 .__lime {
   color: #0f0 /* !important; */;
 }
 .__teal {
-  color: #008080 /* !important; */;
+  color: #399 /* !important; */;
 }
 .__blue {
-  color: #00f /* !important; */;
+  color: #66c /* !important; */;
 }
 .__navy {
-  color: #000080 /* !important; */;
+  color: #036 /* !important; */;
 }
 .__violet {
-  color: #ee82ee /* !important; */;
+  color: #e9e /* !important; */;
 }
 .__purple {
-  color: #800080 /* !important; */;
+  color: #909 /* !important; */;
 }
 .__pink {
-  color: #ffc0cb /* !important; */;
+  color: #f99 /* !important; */;
 }
 .__brown {
-  color: #a52a2a /* !important; */;
+  color: #a22 /* !important; */;
 }
 .__Red {
   color: #fff;
@@ -1359,42 +1359,46 @@ body {
 }
 .__Info {
   color: #fff;
-  background: #00f /* !important; */;
+  background: #66c /* !important; */;
 }
 .__Warn {
   color: #000;
-  background: #ff0 /* !important; */;
+  background: #fd0 /* !important; */;
 }
 .__Error {
   color: #fff;
-  background: #f00 /* !important; */;
+  background: #f33 /* !important; */;
 }
 .__Ok {
   color: #fff;
-  background: #008080 /* !important; */;
+  background: #399 /* !important; */;
 }
 .__Ng {
   color: #000;
-  background: #ffc0cb /* !important; */;
+  background: #f99 /* !important; */;
 }
-.__info {
-  color: #00f;
+.__info,
+.myCard > p {
+  color: #66c;
 }
 .__warn {
-  color: #ff0;
+  color: #fd0;
 }
 .__error {
-  color: #f00;
+  color: #f33;
 }
 .__ok {
-  color: #008080;
+  color: #399;
 }
 .__ng {
-  color: #ffc0cb;
+  color: #f99;
 }
-.__Base {
+.__Base,
+.myVirticaled li,
+.myCard > h4,
+table.myTable thead {
   color: #fff;
-  background: #000080;
+  background: #036;
 }
 .__Main {
   color: #fff;
@@ -1402,16 +1406,16 @@ body {
 }
 .__Accent {
   color: #fff;
-  background: #ffa500;
+  background: #f83;
 }
 .__base {
-  color: #000080;
+  color: #036;
 }
 .__main {
   color: #66c;
 }
 .__accent {
-  color: #ffa500;
+  color: #f83;
 }
 .__ime-off {
   ime-mode: disabled;
@@ -1458,12 +1462,20 @@ ul li a {
   width: 100%;
   height: 100%;
 }
-ul.--virticaled {
+ul.--virticaled,
+.myVirticaled {
   letter-spacing: -1rem;
 }
-ul.--virticaled > li {
+ul.--virticaled > li,
+.myVirticaled > li {
   display: inline-block;
   letter-spacing: normal;
+}
+.myVirticaled li {
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
 }
 input[type="text"],
 input[type="password"],
@@ -1498,22 +1510,32 @@ textarea:invalid {
 }
 /* compo */
 ._Box,
-._Card {
+._Card,
+.myCard {
   box-sizing: border-box;
 }
 ._Box > *,
-._Card > * {
+._Card > *,
+.myCard > * {
   margin: 0;
   padding: 0;
 }
 ._Box.--shadow,
-._Card.--shadow {
+._Card.--shadow,
+.myCard.--shadow {
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
 }
-._Card {
+._Card,
+.myCard {
   display: inline-block;
   letter-spacing: normal;
   vertical-align: top;
+}
+.myCard {
+  width: 400px;
+}
+.myCard > * {
+  padding: 0.7rem 1rem;
 }
 ._Btn {
   border-color: #000;
@@ -1667,93 +1689,93 @@ textarea:invalid {
   background: #fff;
 }
 ._Btn.--info {
-  border-color: #00f;
-  color: #00f;
+  border-color: #66c;
+  color: #66c;
   background: #fff;
 }
 ._Btn.--info:hover {
   color: #fff;
-  background: #00f;
+  background: #66c;
 }
 ._Btn.--Info {
-  border-color: #00f;
+  border-color: #66c;
   color: #fff;
-  background: #00f;
+  background: #66c;
 }
 ._Btn.--Info:hover {
-  color: #00f;
+  color: #66c;
   background: #fff;
 }
 ._Btn.--warn {
-  border-color: #ff0;
+  border-color: #fd0;
   color: #983;
   background: #fff;
 }
 ._Btn.--warn:hover {
   color: #000;
-  background: #ff0;
+  background: #fd0;
 }
 ._Btn.--Warn {
-  border-color: #ff0;
+  border-color: #fd0;
   color: #000;
-  background: #ff0;
+  background: #fd0;
 }
 ._Btn.--Warn:hover {
-  color: #ff0;
+  color: #fd0;
   background: #000;
 }
 ._Btn.--error {
-  border-color: #f00;
-  color: #f00;
+  border-color: #f33;
+  color: #f33;
   background: #fff;
 }
 ._Btn.--error:hover {
   color: #fff;
-  background: #f00;
+  background: #f33;
 }
 ._Btn.--Error {
-  border-color: #f00;
+  border-color: #f33;
   color: #fff;
-  background: #f00;
+  background: #f33;
 }
 ._Btn.--Error:hover {
-  color: #f00;
+  color: #f33;
   background: #fff;
 }
 ._Btn.--ok {
-  border-color: #008080;
-  color: #008080;
+  border-color: #399;
+  color: #399;
   background: #fff;
 }
 ._Btn.--ok:hover {
   color: #fff;
-  background: #008080;
+  background: #399;
 }
 ._Btn.--Ok {
-  border-color: #008080;
+  border-color: #399;
   color: #fff;
-  background: #008080;
+  background: #399;
 }
 ._Btn.--Ok:hover {
-  color: #008080;
+  color: #399;
   background: #fff;
 }
 ._Btn.--ng {
-  border-color: #ffc0cb;
+  border-color: #f99;
   color: #c66;
   background: #fff;
 }
 ._Btn.--ng:hover {
   color: #000;
-  background: #ffc0cb;
+  background: #f99;
 }
 ._Btn.--Ng {
-  border-color: #ffc0cb;
+  border-color: #f99;
   color: #000;
-  background: #ffc0cb;
+  background: #f99;
 }
 ._Btn.--Ng:hover {
-  color: #ffc0cb;
+  color: #f99;
   background: #000;
 }
 ._Far:before,
@@ -1803,11 +1825,19 @@ input._Fas {
 table {
   border-collapse: collapse;
 }
-table.--striped tr:nth-child(even) {
+table.--striped tr:nth-child(even),
+table.myTable tr:nth-child(even) {
   background: #f3f3f3;
 }
-table.--hoverd tbody tr:hover {
+table.--hoverd tbody tr:hover,
+table.myTable tbody tr:hover {
   background: #ffe;
+}
+table.myTable {
+  width: 100%;
+}
+table.myTable thead th {
+  border: solid 2px #fff;
 }
 ._Tag {
   box-sizing: border-box;

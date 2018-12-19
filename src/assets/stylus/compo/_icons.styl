@@ -5,33 +5,33 @@
 // Solid    900   白抜きのアイコン
 // Regular  400   アウトライン
 // Light    300   線が細いもの
-.{compo_prefix}Far {
+.{$compo_prefix}Far {
   &:before {
     font-family: "Font Awesome 5 Free";
     line-height: 1;
     margin-right: 5px;
   }
-  &.{modif_prefix}heart:before { content: '\f004'; }
-  &.{modif_prefix}user:before, { content: '\f007'; }
+  &.{$modif_prefix}heart:before { content: '\f004'; }
+  &.{$modif_prefix}user:before, { content: '\f007'; }
 }
-.{compo_prefix}Fas {
-  @extend .{compo_prefix}Far;
+.{$compo_prefix}Fas {
+  @extend .{$compo_prefix}Far;
   font-weight: 900;
-  &.{modif_prefix}lock:before         { content: '\f023'; }
-  &.{modif_prefix}th:before           { content: '\f00a'; }
-  &.{modif_prefix}th-list:before      { content: '\f00b'; }
-  &.{modif_prefix}th-large:before     { content: '\f009'; }
-  &.{modif_prefix}sign-out-alt:before { content: '\f2f5'; }
+  &.{$modif_prefix}lock:before         { content: '\f023'; }
+  &.{$modif_prefix}th:before           { content: '\f00a'; }
+  &.{$modif_prefix}th-list:before      { content: '\f00b'; }
+  &.{$modif_prefix}th-large:before     { content: '\f009'; }
+  &.{$modif_prefix}sign-out-alt:before { content: '\f2f5'; }
 }
 
 input {
   &:before, &:after { margin:0; }
-  &.{compo_prefix}Far {
+  &.{$compo_prefix}Far {
     font-family: "Font Awesome 5 Free";
     line-height: 1;
   }
-  &.{compo_prefix}Fas {
-    @extend input.{compo_prefix}Far;
+  &.{$compo_prefix}Fas {
+    @extend input.{$compo_prefix}Far;
     font-weight: 900;
   }
 }
