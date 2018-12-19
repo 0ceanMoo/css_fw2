@@ -22,12 +22,12 @@
 //  200 -1000pxまで、50px間隔で作る
 //@for $i from 2 through 10 {
 for i in (2..10) {
-  ww  = i * 10            // 20 - 100
-  www = i * 100           // 200 - 1000
-  wwh = www - 50          // 150 - 950
-  .{$utils_prefix}w-{ww}px { width:(ww)px  !important; }
-  .{$utils_prefix}w-{wwh}px{ width:(wwh)px !important; }
-  .{$utils_prefix}w-{www}px{ width:(www)px !important; }
+  $ww  = i * 10           // 20 - 100
+  $www = i * 100          // 200 - 1000
+  $wwh = $www - 50        // 150 - 950
+  .{$utils_prefix}w-{$ww}px { width:($ww)px  !important; }
+  .{$utils_prefix}w-{$wwh}px{ width:($wwh)px !important; }
+  .{$utils_prefix}w-{$www}px{ width:($www)px !important; }
 }
 
 // 5-100%を、5間隔で作る

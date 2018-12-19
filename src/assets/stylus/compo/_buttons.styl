@@ -3,7 +3,7 @@
 // ============================================== */
 // https://copypet.jp/417/
 
-button(c=black, bg=white, bd=, h_c=, h_bg=)
+$button(c=black, bg=white, bd=, h_c=, h_bg=)
   unless h_c
     h_c = bg
   unless h_bg
@@ -23,7 +23,7 @@ button(c=black, bg=white, bd=, h_c=, h_bg=)
     background: h_bg
 
 .{$compo_prefix}Btn
-  button()
+  $button()
   box-sizing: border-box
   display: inline-block
   padding: .4rem 1.2rem .3rem
@@ -33,60 +33,60 @@ button(c=black, bg=white, bd=, h_c=, h_bg=)
   transition: .4s
 
   &.{$modif_prefix}Black
-    button(white, black, 1)
+    $button(white, black, 1)
   &.{$modif_prefix}red
-    button($red)
+    $button($red)
   &.{$modif_prefix}Red
-    button(white, $red, 1)
+    $button(white, $red, 1)
   &.{$modif_prefix}blue
-    button($blue)
+    $button($blue)
   &.{$modif_prefix}Blue
-    button(white, $blue, 1)
+    $button(white, $blue, 1)
   &.{$modif_prefix}orange
-    button($orange)
+    $button($orange)
   &.{$modif_prefix}Orange
-    button(white, $orange, 1)
+    $button(white, $orange, 1)
   &.{$modif_prefix}teal
-    button($teal)
+    $button($teal)
   &.{$modif_prefix}Teal
-    button(white, $teal, 1)
+    $button(white, $teal, 1)
   &.{$modif_prefix}yellow
-    button(#983, white, $yellow, black, $yellow)
+    $button(#983, white, $yellow, black, $yellow)
   &.{$modif_prefix}Yellow
-    button(black, $yellow, 1, #983, white)
+    $button(black, $yellow, 1, #983, white)
   &.{$modif_prefix}pink
-    button(#c66, white, $pink, black, $pink)
+    $button(#c66, white, $pink, black, $pink)
   &.{$modif_prefix}Pink
-    button(black, $pink, 1, #c66, white)
+    $button(black, $pink, 1, #c66, white)
   &.{$modif_prefix}navy
-    button($navy)
+    $button($navy)
   &.{$modif_prefix}Navy
-    button(white, $navy, 1)
+    $button(white, $navy, 1)
 
   &.{$modif_prefix}info
-    button($color-info)
+    $button($color-info)
   &.{$modif_prefix}Info
-    button(white, $color-info, 1)
+    $button(white, $color-info, 1)
 
   &.{$modif_prefix}warn
-    button(#983, white, $color-warn, black, $color-warn)
+    $button(#983, white, $color-warn, black, $color-warn)
   &.{$modif_prefix}Warn
-    button(black, $color-warn, 1)
+    $button(black, $color-warn, 1)
 
   &.{$modif_prefix}error
-    button($color-error)
+    $button($color-error)
   &.{$modif_prefix}Error
-    button(white, $color-error, 1)
+    $button(white, $color-error, 1)
 
   &.{$modif_prefix}ok
-    button($color-ok)
+    $button($color-ok)
   &.{$modif_prefix}Ok
-    button(white, $color-ok, 1)
+    $button(white, $color-ok, 1)
 
   &.{$modif_prefix}ng
-    button(#c66, white, $color-ng, black, $color-ng)
+    $button(#c66, white, $color-ng, black, $color-ng)
   &.{$modif_prefix}Ng
-    button(black, $color-ng, 1)
+    $button(black, $color-ng, 1)
 
   //&.{$modif_prefix}info
   //  @extend .{$compo_prefix}Btn.{$modif_prefix}blue

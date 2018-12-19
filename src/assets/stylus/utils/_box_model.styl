@@ -121,22 +121,22 @@ $mdpd = {
   m: margin,
   p: padding
 }
-for e, p in $mdpd
-  for i in (1..4)
-    val = i * 5
-    .{$utils_prefix}{e}-{val}px
-      {p}: (val)px !important
-    .{$utils_prefix}{e}t-{val}px       // top
-      {p}-top:   (val)px !important
-    .{$utils_prefix}{e}b-{val}px       // bottom
-      {p}-bottom: (val)px !important
-    .{$utils_prefix}{e}l-{val}px       // left
-      {p}-left:  (val)px !important
-    .{$utils_prefix}{e}r-{val}px       // right
-      {p}-right: (val)px !important
-    .{$utils_prefix}{e}x-{val}px       // x(LR)
-      {p}-left:  (val)px !important
-      {p}-right: (val)px !important
-    .{$utils_prefix}{e}y-{val}px       // y(top-bottom)
-      {p}-top:   (val)px !important
-      {p}-bottom:(val)px !important
+for $e, $p in $mdpd
+  for $i in (1..4)
+    $val = $i * 5
+    .{$utils_prefix}{$e}-{$val}px
+      {$p}: ($val)px !important
+    .{$utils_prefix}{$e}t-{$val}px        // top
+      {$p}-top:   ($val)px !important
+    .{$utils_prefix}{$e}b-{$val}px        // bottom
+      {$p}-bottom: ($val)px !important
+    .{$utils_prefix}{$e}l-{$val}px        // left
+      {$p}-left:  ($val)px !important
+    .{$utils_prefix}{$e}r-{$val}px        // right
+      {$p}-right: ($val)px !important
+    .{$utils_prefix}{$e}x-{$val}px        // x(LR)
+      {$p}-left:  ($val)px !important
+      {$p}-right: ($val)px !important
+    .{$utils_prefix}{$e}y-{$val}px        // y(top-bottom)
+      {$p}-top:   ($val)px !important
+      {$p}-bottom:($val)px !important
