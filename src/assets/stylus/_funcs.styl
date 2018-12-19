@@ -44,14 +44,25 @@ $mq-only(size=mobile) {
 }
 
 /*
-.someClass
-  width: 1600px
-  +$mq-down(desktop-hd)
-    width: 1320px
-  +$mq-down(desktop)
-    width: 990px
-  +$mq-down(tablet)
-    width: 660px
-  +$mq-down(phablet)
+.desktopFast
+  width: 1600px       // 想定してる画面サイズ設定（ここではdesktop-hd以上）
+  +$mq-down(desktop)  // desktop(1200px程度)
+    width: 1200px
+  +$mq-down(tablet)   // タブレット用の設定
+    width: 800px
+  +$mq-down(phablet)  // ファブレット用の設定
+    width: 500px
+  +$mq-down(mobile)   // モバイル用の設定
     width: 320px
+*/
+
+/*
+.movileFast
+  width: 400px      // 想定している画面サイズ（ここでは通常のスマホ）
+  +$mq-up(phablet)  // ファブレット用の設定
+    width: 500px
+  +$mq-up(tablet)   // タブレット用の設定
+    width: 800px
+  +$mq-up(desktop)  // デスクトップ以上
+    width: 1200px
 */
